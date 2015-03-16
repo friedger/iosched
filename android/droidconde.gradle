@@ -1,0 +1,58 @@
+android {
+    productFlavors {
+        droidconde {
+            applicationId = "com.conferenceengineer.android.iosched.event1002"
+            manifestPlaceholders = [
+                    uniqueContentIdentifier: "event1002",
+                    mapsApiKey             : droidconuk14_android_maps_api_key
+            ]
+
+            buildConfigField "boolean", "HAS_VIDEO_LIBRARY", "false"
+            buildConfigField "boolean", "SUPPORTS_PEER_BADGE_SCANNING", "false"
+            buildConfigField "boolean", "SUPPORTS_REMOTE_VIEWING", "false"
+            buildConfigField "boolean", "USE_EXTERNAL_MAPS", "true"
+
+            buildConfigField "double", "VENUE_LATITUDE", "51.535555"
+            buildConfigField "double", "VENUE_LONGITUDE", "-0.1047969"
+            buildConfigField "double", "VENUE_CAMERA_LATITUDE", "51.535556"
+            buildConfigField "double", "VENUE_CAMERA_LONGITUDE", "-0.104797"
+
+            buildConfigField "String", "CONFERENCE_NAME", "\"Droidcon London 2014\""
+            buildConfigField "String", "CONFERENCE_DATA_MANIFEST_URL", "\"" + droidconuk14_android_manifest + "\""
+            buildConfigField "String", "OAUTH_APP_NAME", "\"DroidconUK2014-2014\""
+            buildConfigField "String", "OAUTH_API_KEY", "\"" + droidconuk14_android_oauth_api_key + "\""
+            buildConfigField "String", "GCM_API_KEY", "\"" + droidconuk14_gcm_api_key + "\""
+            buildConfigField "String", "GCM_SENDER_ID", "\"" + droidconuk14_gcm_sender_id + "\""
+            buildConfigField "String", "GCM_URL", "\"" + droidconuk14_gcm_url + "\""
+
+            buildConfigField "String", "BOOTSTRAP_DATA_TIMESTAMP", "\"Fri, 24 Oct 2014 09:00:00 GMT\""
+            buildConfigField "String", "CONFERENCE_FEEDBACK_URL", "null"
+            buildConfigField "String", "CONFERENCE_GAME_PACKAGE_NAME", "\"\""
+            buildConfigField "String", "CONFERENCE_HASHTAG", "\"#droidconUK\""
+            buildConfigField "String", "CONFERENCE_HASHTAG_PREFIX", "\"#dcuk\""
+            buildConfigField "String", "CONFERENCE_TIMEZONE", "\"Europe/London\""
+            buildConfigField "String", "FEEDBACK_API_CODE", "\"" + droidconuk14_feedback_api_code + "\""
+            buildConfigField "String", "FEEDBACK_API_KEY", "\"" + droidconuk14_feedback_api_key + "\""
+            buildConfigField "String", "FEEDBACK_SURVEY_ID", "\"" + droidconuk14_feedback_survey_id + "\""
+            buildConfigField "String", "FEEDBACK_URL", "\"" + droidconuk14_feedback_url + "\""
+            buildConfigField "String", "UNIQUE_CONTENT_IDENTIFIER", "\"event1002\""
+            buildConfigField "String", "WIFI_SSID", "\"droidconuk\""
+            buildConfigField "String", "WIFI_PASSPHRASE", "\"WhatTheL50\""
+
+            buildConfigField "Class<? extends android.app.Fragment>", "SOCIAL_FRAGMENT_CLASS",
+                    "com.google.samples.apps.iosched.ui.TwitterSocialFragment.class"
+
+            buildConfigField "long[][]", "CONFERENCE_DAYS", "new long[][] {\n" +
+                    "            {  " +
+                    "               com.google.samples.apps.iosched.util.ParserUtils.parseTime(\"2014-10-30T08:00:00.000Z\"),\n" +
+                    "               com.google.samples.apps.iosched.util.ParserUtils.parseTime(\"2014-10-31T07:59:59.999Z\")\n" +
+                    "            }, {\n" +
+                    "               com.google.samples.apps.iosched.util.ParserUtils.parseTime(\"2014-10-31T08:00:00.000Z\"),\n" +
+                    "               com.google.samples.apps.iosched.util.ParserUtils.parseTime(\"2014-11-01T07:59:59.999Z\")\n" +
+                    "            },\n" +
+                    "        }"
+
+
+        }
+    }
+}
