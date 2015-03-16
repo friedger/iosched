@@ -177,6 +177,61 @@ android {
 
         }
 
+        droidconde {
+            applicationId = "com.conferenceengineer.android.iosched.event1002"
+            manifestPlaceholders = [
+                    uniqueContentIdentifier: "event1002",
+                    mapsApiKey             : droidconde15_android_maps_api_key
+            ]
+
+            buildConfigField "boolean", "HAS_VIDEO_LIBRARY", "false"
+            buildConfigField "boolean", "SUPPORTS_PEER_BADGE_SCANNING", "false"
+            buildConfigField "boolean", "SUPPORTS_REMOTE_VIEWING", "false"
+            buildConfigField "boolean", "USE_EXTERNAL_MAPS", "true"
+
+            buildConfigField "double", "VENUE_LATITUDE", "52.508725"
+            buildConfigField "double", "VENUE_LONGITUDE", "13.436794"
+            buildConfigField "double", "VENUE_CAMERA_LATITUDE", "52.508725"
+            buildConfigField "double", "VENUE_CAMERA_LONGITUDE", "13.436794"
+
+            buildConfigField "String", "CONFERENCE_NAME", "\"Droidcon Berlin 2015\""
+            buildConfigField "String", "CONFERENCE_DATA_MANIFEST_URL", "\"" + droidconde15_android_manifest + "\""
+            buildConfigField "String", "OAUTH_APP_NAME", "\"DroidconDE2015-2015\""
+            buildConfigField "String", "OAUTH_API_KEY", "\"" + droidconde15_android_oauth_api_key + "\""
+            buildConfigField "String", "GCM_API_KEY", "\"" + droidconde15_gcm_api_key + "\""
+            buildConfigField "String", "GCM_SENDER_ID", "\"" + droidconde15_gcm_sender_id + "\""
+            buildConfigField "String", "GCM_URL", "\"" + droidconde15_gcm_url + "\""
+
+            buildConfigField "String", "BOOTSTRAP_DATA_TIMESTAMP", "\"Fri, 24 Oct 2014 09:00:00 GMT\""
+            buildConfigField "String", "CONFERENCE_FEEDBACK_URL", "null"
+            buildConfigField "String", "CONFERENCE_GAME_PACKAGE_NAME", "\"\""
+            buildConfigField "String", "CONFERENCE_HASHTAG", "\"#droidconDE\""
+            buildConfigField "String", "CONFERENCE_HASHTAG_PREFIX", "\"#dcde\""
+            buildConfigField "String", "CONFERENCE_TIMEZONE", "\"Europe/Berlin\""
+            buildConfigField "String", "FEEDBACK_API_CODE", "\"" + droidconde15_feedback_api_code + "\""
+            buildConfigField "String", "FEEDBACK_API_KEY", "\"" + droidconde15_feedback_api_key + "\""
+            buildConfigField "String", "FEEDBACK_SURVEY_ID", "\"" + droidconde15_feedback_survey_id + "\""
+            buildConfigField "String", "FEEDBACK_URL", "\"" + droidconde15_feedback_url + "\""
+            buildConfigField "String", "UNIQUE_CONTENT_IDENTIFIER", "\"event1002\""
+            buildConfigField "String", "WIFI_SSID", "\"droidcon\""
+            buildConfigField "String", "WIFI_PASSPHRASE", "\"droidcon\""
+
+            buildConfigField "Class<? extends android.app.Fragment>", "SOCIAL_FRAGMENT_CLASS",
+                    "com.google.samples.apps.iosched.ui.TwitterSocialFragment.class"
+
+            buildConfigField "long[][]", "CONFERENCE_DAYS", "new long[][] {\n" +
+                    "            {  " +
+                    "               com.google.samples.apps.iosched.util.ParserUtils.parseTime(\"2015-06-04T08:00:00.000Z\"),\n" +
+                    "               com.google.samples.apps.iosched.util.ParserUtils.parseTime(\"2015-06-05T07:59:59.999Z\")\n" +
+                    "            }, {\n" +
+                    "               com.google.samples.apps.iosched.util.ParserUtils.parseTime(\"2015-06-05T08:00:00.000Z\"),\n" +
+                    "               com.google.samples.apps.iosched.util.ParserUtils.parseTime(\"2015-06-06T07:59:59.999Z\")\n" +
+                    "            },\n" +
+                    "        }"
+
+
+        }
+
         droidconnl {
             applicationId = "com.conferenceengineer.android.iosched.event1208"
             manifestPlaceholders = [
