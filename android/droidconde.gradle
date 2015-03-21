@@ -7,6 +7,11 @@ android {
                     mapsApiKey             : droidconuk14_android_maps_api_key
             ]
 
+            buildConfigField "boolean", "HAS_VIDEO_LIBRARY", "false"
+            buildConfigField "boolean", "SUPPORTS_PEER_BADGE_SCANNING", "false"
+            buildConfigField "boolean", "SUPPORTS_REMOTE_VIEWING", "false"
+            buildConfigField "boolean", "USE_EXTERNAL_MAPS", "true"
+
             buildConfigField "double", "VENUE_LATITUDE", "52.508725"
             buildConfigField "double", "VENUE_LONGITUDE", "13.436794"
             buildConfigField "double", "VENUE_CAMERA_LATITUDE", "52.508725"
